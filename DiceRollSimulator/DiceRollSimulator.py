@@ -1,21 +1,23 @@
 import random
 
-def roll_dice(lowest,highest):
+def roll_dice(lowest,highest): #Dice rolling function
     return random.randint(lowest, highest)
 
-def main():
-
+def main(): #main function
     lowest = 1
     highest = 6
     roll_again ="y"
 
-    while roll_again.lower() == "y":
+
+    while roll_again.lower() == "y": #Rolling dice loop
         print("Rolling The Dices...")
         print("The Values are :")
 
-        
-        print(roll_dice(lowest,highest))
+        print(roll_dice(lowest,highest)) #First dice
+        print(roll_dice(lowest,highest)) #Second dice
 
-        print(roll_dice(lowest,highest))
+        roll_again = input("Roll the Dices Again? y/n") #Continue?
 
-        roll_again = input("Roll the Dices Again? y/n") 
+
+if __name__ == "__main__":
+    main()
