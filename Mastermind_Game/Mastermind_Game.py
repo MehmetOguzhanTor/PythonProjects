@@ -18,11 +18,11 @@ def main():
         logging.info("Great! You guessed the number in just 1 try! You're a Mastermind!")
 
     else:
-        count1 = 0
+        count1 = 0 # Counter 1
 
         while number != guessed_number:
-            count1 += 1
-            count2 = 0
+            count1 += 1 # Incrementing counter 1
+            count2 = 0 # Counter 2
 
             number = str(number)
             guessed_number = str(guessed_number)
