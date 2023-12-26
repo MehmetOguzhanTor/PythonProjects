@@ -1,0 +1,6 @@
+cherries
+pythons
+students
+pennies
+systems
+41.67% of the words are pluralized
